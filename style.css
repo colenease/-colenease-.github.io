@@ -1,0 +1,138 @@
+* { box-sizing: border-box; }
+
+header
+{background-color: #40407A; background-image: url(sunrise.jpg); background-size: 100% 100%;
+    margin:0; color: #FFFFFF; padding: 9em; align-items: center; background-repeat: no-repeat;
+    margin-top: 50px; font-size: 90%; min-height: 200px;
+}
+header a:link{ color: #FFFFFF; text-underline: none;}
+header a:visited{ color: #FFFFFF; text-underline: none;}
+header a:hover{ color:#8F92B2; text-underline: none; transition: ease-out 10s;}
+
+
+
+
+nav{text-align: right; background-color: #FFFFFF; margin: 0; padding-top: 0.5em; padding-bottom: 1em; padding-right: 0;
+position: fixed; top: 0; left: 0; z-index: 9999; width: 100%; height: auto;
+}
+nav ul{list-style-type: none; padding-right: 2em; font-size: 1.2em; margin: 0;}
+nav li {display: inline; padding-left: 2em; width: 30%;}
+
+a:link { text-decoration: none; color: #3F2860; }
+a:visited { text-decoration: none; color: #497777;}
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; color: #A26100;}
+
+
+
+body {background-color: #40407A;
+    margin: 0;
+    color: #40407A;
+    font-family: sans-serif;
+
+}
+
+h2{margin: 0;}
+
+li {font-size: 90%}
+dd {font-size: 90%}
+
+footer {text-align: center;
+    font-size: small;
+    font-style: italic;
+    color: #40407A;
+    clear: right;}
+
+
+main { background-color: #f5f5f5;
+    padding: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background-size: 100%;
+   }
+
+home {height: 20vh;
+    padding-top: 2em;
+    padding-left: 10%;
+    text-align: center;}
+
+wrapper {margin-left: auto;
+    margin-right: auto;
+    background-color: #F5F5F5;
+    padding: 2em;}
+
+content {height: 20vh;
+    padding-top: 2em;
+    padding-left: 10%;
+    }
+
+section {padding-left: .5em; padding-right: .5em;}
+
+
+
+
+div.matHero {background-image:url(yogamat.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 300px;
+    width: 700px;
+    margin: auto;
+    display: none;}
+
+div.loungeHero {background-image:url(yogalounge.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 300px;
+    width: 700px;
+    margin: auto;
+    display: none}
+
+div.flow {display: block;}
+
+form{display: flex; flex-flow: nowrap;}
+input, datalist textarea {margin-bottom: .5em;}
+
+table {border-spacing: 1px;
+    border: solid 1px #40407A;
+    border-collapse: collapse;}
+
+th, tr {padding: 0.5em;
+    border: solid 1px #40407A;
+    border-spacing: 1px; }
+
+tr:nth-of-type(even){background-color: #D7E8E9;}
+
+caption{margin: 1em;
+    font-weight: bold;
+    font-size: 120%;}
+
+audio{margin-bottom: 1em;}
+
+@media (min-width: 600px){
+    nav ul{justify-content: flex-end;}
+    nav li{width: 7em;}
+    section{padding-left: 2em; padding-right: 2em;}
+    div.matHero{display: block; padding-bottom: 1em;}
+    div.loungeHero{display: block; padding-bottom: 1em;}
+    div.flow{flex-direction: row;}
+    form{
+        width: 60%; max-width: 40em; grid-gap: 1em;  display: grid; grid-template-columns: 9em 1fr;
+    }
+
+
+}
+
+@media (min-width: 1024px){
+    header{font-size: 120%;}
+    nav{font-weight: bold;}
+    .home{height: 50vh; padding-top: 5em; padding-left: 8em;}
+    .content{height: 30vh; padding-top: 2em; padding-left: 8em;}
+    .wrapper{margin: auto; width: 80%;}
+
+.flow {display: flex; flex-direction: row;}
+}
+
+
+
+
